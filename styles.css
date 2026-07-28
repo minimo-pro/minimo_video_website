@@ -165,7 +165,8 @@ h3 {
   box-shadow: 0 24px 60px #27272718;
 }
 
-.comparison-frame img {
+.comparison-frame img,
+.comparison-frame video {
   position: absolute;
   width: 100%;
   height: 100%;
