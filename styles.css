@@ -118,15 +118,21 @@ h3 {
   line-height: 1.45;
 }
 
-.development {
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.store-link {
   width: fit-content;
-  margin-bottom: 0;
   padding: 13px 20px;
   color: var(--white);
   background: var(--ink);
   border: 2px solid var(--ink);
   border-radius: 14px;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .note {
