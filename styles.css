@@ -180,7 +180,8 @@ h3 {
 }
 
 .comparison-after {
-  clip-path: inset(0 calc(100% - var(--position)) 0 0);
+  /* Keep the original on the left and reveal the compressed video on the right. */
+  clip-path: inset(0 0 0 var(--position));
 }
 
 .comparison-label {
@@ -194,8 +195,8 @@ h3 {
   font-size: 15px;
 }
 
-.before-label { right: 18px; }
-.after-label { left: 18px; }
+.before-label { left: 18px; }
+.after-label { right: 18px; }
 
 .comparison-line {
   position: absolute;
