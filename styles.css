@@ -243,8 +243,15 @@ h3 {
 }
 
 .privacy p {
-  color: var(--muted);
+  max-width: 580px;
+  color: #d0d0d0;
   line-height: 1.45;
+  font-size: 21px;
+}
+
+.privacy .eyebrow {
+  color: var(--red);
+  font-size: 16px;
 }
 
 .privacy {
@@ -265,11 +272,16 @@ h3 {
   transform: rotate(-7deg);
 }
 
-.privacy p:last-child {
-  max-width: 580px;
-  margin-bottom: 0;
-  color: #d0d0d0;
-  font-size: 21px;
+.donate-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 13px 20px;
+  color: var(--ink);
+  background: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 14px;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .policy-page {
