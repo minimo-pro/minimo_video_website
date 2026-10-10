@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="minimo (video) — a free app for compressing videos directly on your phone.">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#f1f2f6">
+    <meta name="theme-color" content="#8bcce8">
     <title>minimo (video) — lighter videos</title>
     <link rel="canonical" href="https://minimo-video.vercel.app/">
     <meta property="og:type" content="website">
@@ -30,44 +30,52 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <script defer src="https://cloud.umami.is/script.js" data-website-id="7fd7380c-56d5-446b-9e39-1f5a5b83926c"></script>
   </head>
-  <body>
+  <body class="landing">
     <header>
       <a class="brand" href="#" aria-label="minimo (video), home">
         <img src="assets/icon.png" alt="" width="44" height="44">
         <span>minimo (video)</span>
       </a>
       <nav class="top-links" aria-label="Project links">
-        <a class="text-link" href="https://github.com/minimo-pro/minimo_video">github ↗</a>
-        <a class="text-link" href="https://web.tribute.tg/d/PM3">donate ↗</a>
+        <a class="text-link" href="#comparison">See the difference</a>
+        <a class="text-link" href="#privacy">Why minimo?</a>
+        <a class="text-link" href="https://github.com/minimo-pro/minimo_video">GitHub ↗</a>
+        <a class="nav-cta" href="#download">Get the app ↗</a>
+        <a class="nav-cta nav-donate" href="https://web.tribute.tg/d/PM3">Donate ♡</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">free · right on your phone</p>
-          <h1>Lighter videos.<br>Moments stay.</h1>
-          <p class="lead">
-            Compress one or several videos, save storage and keep what matters
-            — without uploading your files to the cloud.
-          </p>
-          <div class="store-links" aria-label="Download minimo (video)">
-            <a class="store-link" href="https://apps.apple.com/us/app/minimo-video/id6787456951">App Store ↗</a>
-            <a class="store-link" href="https://play.google.com/store/apps/details?id=com.khlebobul.minimo_video">Google Play ↗</a>
+          <p class="eyebrow">a little less space. a lot more memories.</p>
+          <h1 id="hero-title">Lighter <em>videos.</em><br>Same beautiful moments.</h1>
+          <p class="lead">Make room for more life. Compress your videos right on your phone,<br class="desktop-break"> without sending your memories to the cloud.</p>
+          <div class="store-links" id="download" aria-label="Download minimo (video)">
+            <a class="store-link" href="https://apps.apple.com/us/app/minimo-video/id6787456951"><img class="store-icon apple-icon" src="assets/apple.svg" alt="" width="20" height="20"> App Store</a>
+            <a class="store-link secondary" href="https://play.google.com/store/apps/details?id=com.khlebobul.minimo_video"><img class="store-icon" src="assets/googleplay.svg" alt="" width="20" height="20"> Google Play</a>
           </div>
-          <p class="note">Available on iOS and Android · open source</p>
+          <p class="note">Free forever · iOS &amp; Android</p>
         </div>
 
-        <img class="demo" src="assets/demo.png" alt="A video enters the phone and comes out compressed">
+        <div class="phone-scene" aria-label="A look inside minimo (video)">
+          <div class="phone phone-left"><img src="assets/result.png" alt="Compression completed: six videos saved, 1.8 GB freed" width="1320" height="2868"></div>
+          <div class="phone phone-right"><img src="assets/result-dark.png" alt="The compression result in dark mode" width="1320" height="2868"></div>
+          <div class="phone phone-center"><img src="assets/settings.png" alt="Choose video quality: six videos go from 2.4 GB to 612 MB" width="1320" height="2868" fetchpriority="high"></div>
+          <div class="floating-card space-card"><span class="card-icon" aria-hidden="true">↘</span><div><strong>Less space. More life.</strong><span>Keep the moments that matter.</span></div></div>
+          <div class="floating-card private-card"><span class="card-icon" aria-hidden="true">⌂</span><div><strong>Your phone. Your videos.</strong><span>Nothing uploaded. Ever.</span></div></div>
+          <div class="floating-card free-card"><span class="card-icon" aria-hidden="true">♡</span><div><strong>Made for everyone.</strong><span>No ads. No subscription.</span></div></div>
+        </div>
+        <div class="hero-bottom"><p>Small files.<br><strong>Big possibilities.</strong></p><a href="https://github.com/minimo-pro/minimo_video">Independently made. Open source. <span aria-hidden="true">↗</span></a></div>
       </section>
 
-      <section class="comparison" aria-labelledby="comparison-title">
+      <section id="comparison" class="comparison" aria-labelledby="comparison-title">
         <p class="eyebrow">see the difference</p>
         <h2 id="comparison-title">Before and After.</h2>
         <p>Drag the line to compare the original with the compressed result.</p>
         <div class="comparison-frame" style="--position: 50%">
           <video src="assets/videos/sample_video.mp4" autoplay muted loop playsinline aria-label="Original video"></video>
-          <video class="comparison-after" src="assets/videos/sample_video_minimo.mp4" autoplay muted loop playsinline aria-label="Compressed video"></video>
+          <video class="comparison-after" src="assets/videos/minimo_saple_video.mp4" autoplay muted loop playsinline aria-label="Compressed video"></video>
           <span class="comparison-label before-label">before</span>
           <span class="comparison-label after-label">after</span>
           <span class="comparison-line" aria-hidden="true"><b>↔</b></span>
@@ -75,17 +83,23 @@
         </div>
       </section>
 
-      <section class="privacy">
-        <img src="assets/icon.png" alt="" width="120" height="120">
-        <div>
+      <section id="privacy" class="privacy" aria-labelledby="privacy-title">
+        <div class="privacy-copy">
           <p class="eyebrow">your videos stay yours</p>
-          <h2>No cloud. No subscription.</h2>
-          <p>
-            Everything is processed on your device. The app is free, with no
-            ads and no paywall — and it stays that way. If minimo helps you,
-            a donation keeps the project going.
-          </p>
-          <a class="donate-link" href="https://web.tribute.tg/d/PM3">donate ↗</a>
+          <h2 id="privacy-title">Your memories.<br>Always yours.</h2>
+          <p>Make your videos smaller, without giving them away. Everything happens right on your phone.</p>
+          <ul class="privacy-benefits">
+            <li><span aria-hidden="true">↙</span><div><strong>No cloud uploads</strong><p>Your files stay on your device.</p></div></li>
+            <li><span aria-hidden="true">♡</span><div><strong>No ads. No subscription.</strong><p>Every feature is free for everyone.</p></div></li>
+            <li><span aria-hidden="true">⌘</span><div><strong>Open source, by design</strong><p><a href="https://github.com/minimo-pro/minimo_video">Take a look at the code ↗</a></p></div></li>
+          </ul>
+        </div>
+        <div class="support-card">
+          <div class="support-brand"><img src="assets/icon.png" alt="" width="56" height="56"><span>small app. big love.</span></div>
+          <h3>Help keep<br>minimo free.</h3>
+          <p>Built independently, supported by people like you. If minimo helps you, a donation keeps the project growing.</p>
+          <a class="donate-link" href="https://web.tribute.tg/d/PM3"><span aria-hidden="true">♡</span> Donate to minimo <span aria-hidden="true">↗</span></a>
+          <p class="support-note">Entirely optional. The app stays free.</p>
         </div>
       </section>
     </main>
